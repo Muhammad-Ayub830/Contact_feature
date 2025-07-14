@@ -1,0 +1,128 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+}
+.ContactMenu{
+    border-radius: 8px;
+    padding: 15px;
+}
+.search-compon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.search-compon input{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background: #dbdbdf;
+    font-size: 18px;
+    color: #3C3C43;
+    padding-left: 30px;
+    margin: 0 20px;
+    height: 34px;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: 500;
+    width: 220px;
+}
+.search-compon button{
+    padding: 13px 40px;
+    border-radius: 13px;
+    color: #007AFF;
+    border: 0;
+    outline: 0;
+    background:transparent;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 32px;
+    width: 150px;
+}
+.contacts{
+    max-height: 350px;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contacts::-webkit-scrollbar{
+    border-bottom-right-radius: 10px;
+    width: 10px;
+    background-color: #FFFFFF;
+}
+.contacts::-webkit-scrollbar-thumb{
+    background-color: #dbdbdf;
+    border-radius: 30px;
+    width: 100px !important;
+}
+h3{
+    color: #000000;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 22px;
+    margin-bottom: 10px;
+}
+.btn{
+    position: relative;
+}
+.new-contact{
+    position: absolute;
+    padding: 15px;
+    left: -190px;
+    border-radius: 10px;
+    background: #dbdbdf;
+    width: 300px;
+    font-size: 14px;
+    z-index: 6;
+}
+.new-contact input{
+   margin-bottom: 5px;
+   background-color: #424242fd;
+   width: 100%;
+   padding: 10px;
+   border-radius: 8px;
+}
+.new-contact input::placeholder{
+    font-size: small;
+    color: #3C3C43;
+}
+.new-contact button{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px;
+ 
+}
+.hide{
+    display: none;
+
+}
+.show{
+    display: block;
+}
+.corss-icon{
+   color: rgb(54, 32, 153);
+   font-size: 22px;
+   margin-left: 93%;
+   margin-bottom: 10px;
+   font-weight: 800;
+}
+.no-contacts {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+}

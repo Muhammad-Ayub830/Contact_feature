@@ -1,0 +1,55 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 13px 20px;
+    color: #000000;
+    margin: 0 5px;
+    margin-bottom: 8px solid ;
+    border-bottom: 1px solid #E0E0E0;
+    transition: .2s;
+}
+.contact:hover{
+    color: #007AFF;
+    font-weight: bold;
+    border-bottom: 1px solid #a5a4a4;
+}
+.contact-info{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.contact-name{
+    cursor: pointer;
+}
+.contact-info .icon{
+    margin: 0 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 2;
+    position: relative;
+}
+.contact-info svg{
+    font-size: 18px;
+    cursor: pointer;
+    color: #007AFF;
+}
+.display-num{
+    background: #E5E5E5;
+    color: #3C3C43;
+    border-radius: 12px;
+    position: absolute;
+    z-index: 5;
+    padding: 10px 20px ;
+    top: -20px;
+    left: -100px;
+    transition: .5s;
+    opacity: 0;
+}
+.icon:hover .display-num{
+    opacity: 1; 
+} 

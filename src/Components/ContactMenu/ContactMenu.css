@@ -80,31 +80,32 @@ h3{
 }
 .new-contact{
     position: absolute;
-    padding: 15px;
     left: -190px;
     border-radius: 10px;
     background: #dbdbdf;
     width: 300px;
     font-size: 14px;
     z-index: 6;
+    text-align: center;
 }
 .new-contact input{
    margin-bottom: 5px;
-   background-color: #424242fd;
+   background: #F5F5F5;;
    width: 100%;
    padding: 10px;
    border-radius: 8px;
+   width: 250px;
 }
 .new-contact input::placeholder{
     font-size: small;
-    color: #3C3C43;
+    color: #3c3c43a4;
 }
 .new-contact button{
     width: 100%;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
- 
+    cursor: pointer;
 }
 .hide{
     display: none;
@@ -116,9 +117,11 @@ h3{
 .corss-icon{
    color: rgb(54, 32, 153);
    font-size: 22px;
-   margin-left: 93%;
+   margin-left: 77%;
    margin-bottom: 10px;
    font-weight: 800;
+   margin-top: 20px;
+   cursor: pointer;
 }
 .no-contacts {
   text-align: center;

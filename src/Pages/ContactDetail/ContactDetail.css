@@ -1,8 +1,99 @@
-.Contact-detail{
+.Contact-detail-page{
     background-color:#E5E5E5 ;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
+}
+.Contact-detail-page .contact-detail{
+    background-color:#f2f2f7;
+    padding: 40px 15px;
+    width: 300px;
+    border-radius: 14px;
+    padding-bottom: 10px;
+}
+.Contact-detail-page .contact-detail h3{
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Contact-detail-page .contact-detail .call-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.Contact-detail-page .contact-detail .call-options .icon{
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 60px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.Contact-detail-page .contact-detail .call-options .icon div{
+    text-align: center;
+}
+.Contact-detail-page .contact-detail .call-options .icon svg{
+    color: #007AFF;
+    font-size: 18px;
+}
+.Contact-detail-page .contact-detail .call-options .icon p{
+    font-size: 12px;
+    color: #007AFF;
+    margin-top: 3px;
+} 
+.Contact-detail-page .contact-detail .mobil-num{
+    background-color: #ffffff;
+    border-radius: 12px;
+    height: fit-content;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.Contact-detail-page .contact-detail .mobil-num p{
+    font-size: 13px ;
+    font-weight: 400;
+    padding: 10px;
+}
+.Contact-detail-page .contact-detail .mobil-num .mobil-num-data{
+    font-size: 18px;
+    color: #007AFF;
+    cursor: pointer;
+}
+.Contact-detail-page .contact-detail .note{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 30px;
+    min-height: 100px;
+    font-size: 14px;
+}
+.Contact-detail-page .contact-detail  button{
+    color: rgb(212, 6, 6);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    border:1px solid rgb(212, 6, 6); 
+    margin-left: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+@media (max-width:500px){
+    .Contact-detail-page .contact-detail{
+    background-color:#f2f2f7;
+    padding: 40px 15px;
+    width: 340px;
+    border-radius: 14px;
+    padding-bottom: 10px;
+}
 }

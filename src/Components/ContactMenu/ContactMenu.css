@@ -50,6 +50,7 @@
     font-weight: bold;
     margin-top: 32px;
     width: 150px;
+    display: flex;
 }
 .contacts{
     max-height: 350px;
@@ -87,6 +88,7 @@ h3{
     font-size: 14px;
     z-index: 6;
     text-align: center;
+    margin: 0 20px;
 }
 .new-contact input{
    margin-bottom: 5px;
@@ -106,6 +108,10 @@ h3{
     margin-top: 10px;
     padding: 10px;
     cursor: pointer;
+  background-color:#d8d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hide{
     display: none;
@@ -128,4 +134,57 @@ h3{
   padding: 20px;
   color: #666;
   font-style: italic;
+}
+@media (max-width:700px){
+.search-compon{
+    width: 350px;
+}
+.search-compon button{
+    width: 70px;
+    padding: 0;
+}
+.new-contact button{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    /* background-color:#ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width:380px){
+.search-compon{
+    width: 300px;
+}
+.search-compon button{
+    width: 70px;
+    padding: 0;
+     font-size: small;
+}
+.new-contact button{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+  /* background-color:#ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width:500px){
+  .new-contact{
+    position: absolute;
+    left: -250px;
+    border-radius: 10px;
+    background: #dbdbdf;
+    width: 300px;
+    font-size: 14px;
+    z-index: 6;
+    text-align: center;
+}
 }

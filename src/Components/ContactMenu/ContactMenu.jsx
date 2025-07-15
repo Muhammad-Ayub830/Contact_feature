@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { createContext, useContext, useEffect, useRef, useState } from 'react'
 import './ContactMenu.css'
 import Contact from '../Contact/Contact'
 import { UsersContacts } from '../../Apis/UsersContacts'
@@ -6,9 +6,10 @@ import { faCross } from '@fortawesome/free-solid-svg-icons/faCross'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdd, faClose } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-
+import { ContactContext } from '../../Context/Context'
 
 const ContactMenu = () => {
+  const {usersdetails,setusersdetail} = useContext(ContactContext)
   const [contacts, setcontact] = useState(localStorage.getItem("contacts") ? JSON.parse(localStorage.getItem("contacts")) : [])
   const [input, setinput] = useState('')
   const [filteredContacts, setFilteredContacts] = useState([])
@@ -23,7 +24,7 @@ const ContactMenu = () => {
     if (newContactphone === "" || newContactname === "") {
       return null
     }
-    setcontact((prevContact) => [...prevContact, { name: newContactname, phone_number: newContactphone }])
+    setcontact((prevContact) => [...prevContact, { name: newContactname, phone_number: newContactphone,id:Date.now() }])
     name.current.value = ""
     phone.current.value = ""
     setaddcontantLayout(true)
@@ -38,8 +39,10 @@ const ContactMenu = () => {
 
   // storing contacts in local storage
   useEffect(() => {
+   setusersdetail(contacts)
     localStorage.setItem("contacts", JSON.stringify(contacts))
     setFilteredContacts(contacts) // Initialize filtered contacts with all contacts
+    
   }, [contacts])
 
   // input handler and search functionality
@@ -88,10 +91,10 @@ const ContactMenu = () => {
             filteredContacts.slice(0, 50).map((connection, index) => (
           <Contact 
                 name={connection.name} 
-                id={index} 
+                id={connection.id} 
                 phone={connection.phone_number} 
                 deleteContact={deleteContact} 
-                key={connection.phone_number} 
+                key={index} 
                 contacts={contacts}
               />
             ))

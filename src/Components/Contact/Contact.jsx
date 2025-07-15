@@ -15,7 +15,6 @@ const Contact = ({name,phone,deleteContact,id}) => {
               <FontAwesomeIcon icon={faInfo}/>
                  <div className="display-num">
                   <div >{phone}</div>
-                  {/* <p onClick={()=>{deleteContact(phone)}} style={{fontSize:'small',lineHeight:'3'}}>Delete Contact</p> */}
                   </div>
                 
               </div>
